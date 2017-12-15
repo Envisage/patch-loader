@@ -5,10 +5,16 @@ import memoryfs from 'memory-fs';
 export default (fixture) => {
    const compiler = webpack({
       context: __dirname,
-      entry: `./${fixture}`,
+      entry: fixture,
       output: {
          path: path.resolve(__dirname),
          filename: 'bundle.js',
+      },
+      resolveLoader: {
+         modules: [
+            'node_modules',
+            path.resolve(__dirname, '../../')
+         ]
       }
    });
 
