@@ -12,6 +12,12 @@ test('Apply patch failure', async () => {
    expect(output).toMatch(/^throw new Error\("Module build failed: Error: Patch could not apply cleanly/);
 });
 
+test('Apply patch to package module', async () => {
+   const stats = await compiler('./require-foobar.js');
+   const output = stats.modules[1].source;
+   expect(output).toBe("export default module.exports = 'Hello, Patched World!';");
+});
+
 test('Patch file not found', async () => {
    const stats = await compiler('patch-loader?patch=./missing.patch!./hello.js');
    const output = stats.modules[0].source;

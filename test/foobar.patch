@@ -1,0 +1,7 @@
+--- index.orig.js	2017-12-15 13:40:31.519453019 -0500
++++ index.js	2017-12-15 13:40:39.722786291 -0500
+@@ -1 +1 @@
+-module.exports = 'Hello, World!';
+\ No newline at end of file
++module.exports = 'Hello, Patched World!';
+\ No newline at end of file

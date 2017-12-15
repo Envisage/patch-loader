@@ -10,6 +10,12 @@ export default (fixture) => {
          path: path.resolve(__dirname),
          filename: 'bundle.js',
       },
+      resolve: {
+         modules: [
+            'node_modules',
+            path.resolve(__dirname, 'my_modules')
+         ]
+      },
       resolveLoader: {
          modules: [
             'node_modules',
