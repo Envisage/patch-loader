@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest"
   },
-  "author": "Josh Kropf <josh@slashdev.ca>",
+  "author": "Josh Kropf <josh@envisageny.com>",
   "license": "MIT",
   "dependencies": {
     "diff": "^3.4.0",
