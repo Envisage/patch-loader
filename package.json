@@ -1,0 +1,22 @@
+{
+  "name": "patch-loader",
+  "version": "1.0.0",
+  "description": "Webpack loader to apply unified diff patch files",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Josh Kropf <josh@slashdev.ca>",
+  "license": "MIT",
+  "dependencies": {
+    "diff": "^3.4.0",
+    "loader-utils": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-jest": "^21.2.0",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^21.2.1",
+    "memory-fs": "^0.4.1",
+    "webpack": "^3.10.0"
+  }
+}

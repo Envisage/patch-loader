@@ -1,0 +1,7 @@
+--- foo.orig.js	2017-12-14 17:23:10.375319443 -0500
++++ foo.js	2017-12-14 17:23:37.118651711 -0500
+@@ -1 +1 @@
+-console.log('Hello, World!');
+\ No newline at end of file
++console.log('Hello, Patched World!');
+\ No newline at end of file
