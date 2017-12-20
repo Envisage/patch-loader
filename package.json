@@ -1,6 +1,6 @@
 {
   "name": "patch-loader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Webpack loader to apply unified diff patch files",
   "main": "index.js",
   "scripts": {
