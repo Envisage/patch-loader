@@ -22,7 +22,7 @@ module.exports = function loader(content) {
          throw new Error('Patch could not apply cleanly');
       }
 
-      return `module.exports = ${result}`;
+      return result;
    } else {
       throw new Error('Invalid patch file format');
    }
